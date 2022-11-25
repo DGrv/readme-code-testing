@@ -15,10 +15,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - name: Install dependencies
-        run: pip install pytest
-      - name: Test with pytest
-        run: pytest test_src
+      - name: Install dependencies and build wheel
+        run: |
+            python -m pip install --user --upgrade build
+            python -m build
+            pip install pytest
 
       - name: embedding readme
         uses: tokusumi/markdown-embed-code@v1.0.0
