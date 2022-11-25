@@ -17,7 +17,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           ref: main
       - name: embedding readme
-        uses: DGRV/markdown-embed-code
+        uses: DGRV/markdown-embed-code@v1.0.2
         with:
           markdown: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
