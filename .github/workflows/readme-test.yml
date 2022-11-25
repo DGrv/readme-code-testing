@@ -20,7 +20,7 @@ jobs:
             # python -m build
             # pip install pytest
       - name: embedding readme
-        uses: technology-studio-forks/markdown-embed-code@v1.1.2
+        uses: cgalliva/markdown-embed-code@v1.0.1
         with:
           markdown: "README.md"
           token: ${{ secrets.GITHUB_TOKEN }}
