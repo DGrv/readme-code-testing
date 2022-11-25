@@ -1,4 +1,4 @@
-name: Test code and embed into README
+name: Test code and embed into READMEs
 
 on:
   pull_request:
